@@ -9,7 +9,7 @@ function ShowBookList() {
 
   useEffect(() => {
     axios
-      .get('https://week3-smoky.vercel.app')
+      .get('http://week3-smoky.vercel.app')
       .then((res) => {
         setBooks(res.data);
       })

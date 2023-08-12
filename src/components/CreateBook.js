@@ -22,9 +22,9 @@ const CreateBook = (props) => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    
+
     axios
-      .post('https://week3-smoky.vercel.app', book)
+      .post('http://week3-smoky.vercel.app', book)
       .then((res) => {
         setBook({
           title: '',

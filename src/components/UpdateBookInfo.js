@@ -18,7 +18,7 @@ function UpdateBookInfo(props) {
 
   useEffect(() => {
     axios
-      .get(`https://week3-smoky.vercel.app/${id}`)
+      .get(`http://week3-smoky.vercel.app/${id}`)
       .then((res) => {
         setBook({
           title: res.data.title,
@@ -51,7 +51,7 @@ function UpdateBookInfo(props) {
     };
 
     axios
-      .put(`https://week3-smoky.vercel.app${id}`, data)
+      .put(`http://week3-smoky.vercel.app${id}`, data)
       .then((res) => {
         navigate(`/show-book/${id}`);
       })
