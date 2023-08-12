@@ -24,7 +24,7 @@ const CreateBook = (props) => {
     e.preventDefault();
 
     axios
-      .post('http://localhost:8082/api/books', book)
+      .post('http://week3-smoky.vercel.app', book)
       .then((res) => {
         setBook({
           title: '',

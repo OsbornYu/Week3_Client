@@ -11,7 +11,7 @@ function ShowBookDetails(props) {
 
   useEffect(() => {
     axios
-      .get(`week3-smoky.vercel.app/${id}`)
+      .get(`http://week3-smoky.vercel.app/${id}`)
       .then((res) => {
         setBook(res.data);
       })
@@ -22,7 +22,7 @@ function ShowBookDetails(props) {
 
   const onDeleteClick = (id) => {
     axios
-      .delete(`http://localhost:8082/api/books/${id}`)
+      .delete(`http://week3-smoky.vercel.app${id}`)
       .then((res) => {
         navigate('/');
       })
